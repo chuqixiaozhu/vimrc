@@ -59,26 +59,37 @@ color evening
 "显示行号
 set number
 "tab宽度
-set tabstop=2
+set tabstop=4
 "统一缩进
-set shiftwidth=2
+set shiftwidth=4
+"用空格代替tab
+set expandtab
+" Be smart when using tabs ;)
+set smarttab
 "智能缩进
 set cindent
 set smartindent
 "高亮显示匹配的括号
 set showmatch
-"用空格代替tab
-set expandtab
 "显示标尺
 set ruler
 "去掉vi一致性
 set nocompatible
 "搜索高亮显示
 set hlsearch
+" When searching try to be smart about cases 
+set smartcase
 "可以在buffer的任何地方使用鼠标（类似office中在工作区双击鼠标定位）
 set mouse=a
 set selection=exclusive
 set selectmode=mouse,key
+" highlight current line
+set cursorline
+" Set 7 lines to the cursor - when moving vertically using j/k
+set so=7
+" Show matching brackets when text indicator is over them
+set showmatch
+
 "总是显示状态行
 "set laststatus=2
 "自动补全
