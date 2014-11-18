@@ -50,4 +50,13 @@ set guifont=Consolas:h12
 set number
 set cursorline
 
+set mouse=a
+set selection=exclusive
+set selectmode=mouse,key
+
 set backspace=indent,eol,start
+
+map <up> gk
+map <down> gj
+map j gj
+map k gk
