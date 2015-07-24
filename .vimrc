@@ -86,10 +86,14 @@ set selectmode=mouse,key
 " highlight current line
 set cursorline
 " Set 7 lines to the cursor - when moving vertically using j/k
-set so=7
+"set so=7
 " Show matching brackets when text indicator is over them
 set showmatch
-
+" Set movement
+map <up> gk
+map <down> gj
+map j gj
+map k gk
 "总是显示状态行
 "set laststatus=2
 "自动补全
