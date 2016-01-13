@@ -46,17 +46,26 @@ set si "Smart indent
 """"""""""""""""""""""""""""""
 " Always show the status line
 set laststatus=2
-set guifont=Consolas:h12
+" set guifont=Consolas:h12
 set number
-set cursorline
+" set cursorline
 
 set mouse=a
 set selection=exclusive
 set selectmode=mouse,key
 
-set backspace=indent,eol,start
+" set backspace=indent,eol,start
+set nocompatible
 
 map <up> gk
 map <down> gj
 map j gj
 map k gk
+
+" for gnome-terminal
+if has("autocmd")
+au InsertEnter * silent execute "!gconftool-2 --type string --set /apps/gnome-terminal/profiles/Default/cursor_shape ibeam"
+au InsertLeave * silent execute "!gconftool-2 --type string --set /apps/gnome-terminal/profiles/Default/cursor_shape block"
+au VimLeave * silent execute "!gconftool-2 --type string --set /apps/gnome-terminal/profiles/Default/cursor_shape block"
+au VimEnter * silent execute "!gconftool-2 --type string --set /apps/gnome-terminal/profiles/Default/cursor_shape block"
+endif
