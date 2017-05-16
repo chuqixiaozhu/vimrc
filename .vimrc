@@ -39,11 +39,11 @@ endif
 
 " The following are commented out as they cause vim to behave a lot
 " differently from regular Vi. They are highly recommended though.
-"set showcmd		" Show (partial) command in status line.
-"set showmatch		" Show matching brackets.
-"set ignorecase		" Do case insensitive matching
-"set smartcase		" Do smart case matching
-"set incsearch		" Incremental search
+set showcmd		" Show (partial) command in status line.
+set showmatch		" Show matching brackets.
+set ignorecase		" Do case insensitive matching
+set smartcase		" Do smart case matching
+set incsearch		" Incremental search
 "set autowrite		" Automatically save before commands like :next and :make
 "set hidden             " Hide buffers when they are abandoned
 "set mouse=a		" Enable mouse usage (all modes)
@@ -55,7 +55,7 @@ endif
 
 
 "设置背景主题
-color evening
+color elflord
 "显示行号
 set number
 "tab宽度
@@ -77,8 +77,6 @@ set ruler
 set nocompatible
 "搜索高亮显示
 set hlsearch
-" When searching try to be smart about cases 
-set smartcase
 "可以在buffer的任何地方使用鼠标（类似office中在工作区双击鼠标定位）
 set mouse=a
 set selection=exclusive
