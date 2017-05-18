@@ -92,6 +92,9 @@ map <up> gk
 map <down> gj
 map j gj
 map k gk
+" Double-click for highlighting
+map <2-LeftMouse> *
+imap <2-LeftMouse> <c-o>*
 "总是显示状态行
 "set laststatus=2
 "自动补全
