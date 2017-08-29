@@ -82,7 +82,7 @@ set mouse=a
 set selection=exclusive
 set selectmode=mouse,key
 " highlight current line
-set cursorline
+"set cursorline
 " Set 7 lines to the cursor - when moving vertically using j/k
 "set so=7
 " Show matching brackets when text indicator is over them
@@ -96,7 +96,7 @@ map k gk
 map <2-LeftMouse> *
 imap <2-LeftMouse> <c-o>*
 "总是显示状态行
-"set laststatus=2
+set laststatus=2
 "自动补全
 "":inoremap ( ()<ESC>i
 "":inoremap ) <c-r>=ClosePair(')')<CR>
