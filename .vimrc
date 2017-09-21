@@ -97,6 +97,8 @@ map <2-LeftMouse> *
 imap <2-LeftMouse> <c-o>*
 "总是显示状态行
 set laststatus=2
+" Disable automatic comment insertion
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 "自动补全
 "":inoremap ( ()<ESC>i
 "":inoremap ) <c-r>=ClosePair(')')<CR>
