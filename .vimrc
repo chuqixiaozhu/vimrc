@@ -96,8 +96,8 @@ imap <2-LeftMouse> <c-o>*
 set laststatus=2
 " Disable automatic comment insertion
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
-" Map df as esc
-inoremap df <esc>
+" Map ctrl-e as Esc
+inoremap <c-e> <Esc>
 "自动补全
 "":inoremap ( ()<ESC>i
 "":inoremap ) <c-r>=ClosePair(')')<CR>
