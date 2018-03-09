@@ -101,8 +101,8 @@ set laststatus=2
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 " Map ;; as Esc
 inoremap ;; <Esc>
-" Map Ctrl-; in Insert Mode as Save File
-inoremap <c-;> <Esc>:update<CR>
+" Map Ctrl-m in Insert Mode as Save File
+inoremap <c-m> <Esc>:update<CR>
 set backspace=2 " make backspace work like most other programs
 
 " For Auto-Pairs
