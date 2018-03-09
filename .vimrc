@@ -96,41 +96,7 @@ imap <2-LeftMouse> <c-o>*
 set laststatus=2
 " Disable automatic comment insertion
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
-" Map ctrl-e as Esc
-inoremap <c-e> <Esc>
-"自动补全
-"":inoremap ( ()<ESC>i
-"":inoremap ) <c-r>=ClosePair(')')<CR>
-"":inoremap { {<CR>}<ESC>O
-"":inoremap } <c-r>=ClosePair('}')<CR>
-"":inoremap [ []<ESC>i
-"":inoremap ] <c-r>=ClosePair(']')<CR>
-"":inoremap " ""<ESC>i
-"":inoremap ' ''<ESC>i
-""function! ClosePair(char)
-""  if getline('.')[col('.') - 1] == a:char
-""    return "\<Right>"
-""  else
-""    return a:char
-""  endif
-""endfunction
-""filetype plugin indent on 
+" Map jk as Esc
+inoremap jk <Esc>
+set backspace=2 " make backspace work like most other programs
 
-"打开文件类型检测, 加了这句才可以用智能补全
-"set completeopt=longest,menu,preview
-
-"let g:clang_complete_copen=1
-"let g:clang_periodic_quickfix=1
-"let g:clang_snippets=1
-"let g:clang_close_preview=1
-" 安装clang, libclang-dev才行
-" apt-get install libclang
-" apt-get install clang
-" git clone https://github.com/Rip-Rip/clang_complete.git
-
-"let g:clang_use_library=1
-"let g:clang_library_path='/home/piglet/Downloads/application/clang complete/clang+llvm-3.3-Ubuntu-13.04-x86_64-linux-gnu/lib'
-"let g:clang_library_path='/usr/lib/llvm-3.2/lib'
-
-"set nocp
-"filetype plugin on
