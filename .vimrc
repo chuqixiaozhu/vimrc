@@ -27,9 +27,12 @@ endif
 
 " Uncomment the following to have Vim jump to the last position when
 " reopening a file
-"if has("autocmd")
-"  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
-"endif
+if has("autocmd")
+	au BufReadPost *
+	 \ if line("'\"") > 1 && line("'\"") <= line("$") && &ft !~# 'commit'
+	 \ |   exe "normal! g`\""
+	 \ | endif
+endif
 
 " Uncomment the following to have Vim load indentation rules and plugins
 " according to the detected filetype.
@@ -98,5 +101,7 @@ set laststatus=2
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 " Map jk as Esc
 inoremap jk <Esc>
+" Map Ctrl-; in Insert Mode as Save File
+inoremap <c-;> <Esc>:update<CR>
 set backspace=2 " make backspace work like most other programs
 
