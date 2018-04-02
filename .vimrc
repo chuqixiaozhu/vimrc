@@ -107,3 +107,6 @@ set backspace=2 " make backspace work like most other programs
 
 " For Auto-Pairs
 let g:AutoPairsShortcutJump = '<C-k>'inoremap
+
+" Search for visually selected text
+" http://vim.wikia.com/wiki/Search_for_visually_selected_text
