@@ -110,3 +110,6 @@ let g:AutoPairsShortcutJump = '<C-k>'
 
 " Search for visually selected text
 " http://vim.wikia.com/wiki/Search_for_visually_selected_text
+
+" Tagbar
+" https://github.com/universal-ctags/ctags
