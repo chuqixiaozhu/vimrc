@@ -106,6 +106,7 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 set backspace=2 " make backspace work like most other programs
 
 " For Auto-Pairs
+" https://github.com/jiangmiao/auto-pairs
 let g:AutoPairsShortcutJump = '<C-k>'
 
 " Search for visually selected text
