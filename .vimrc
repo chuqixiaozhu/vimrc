@@ -116,3 +116,8 @@ let g:AutoPairsShortcutJump = '<C-k>'
 " https://github.com/universal-ctags/ctags
 " https://github.com/majutsushi/tagbar
 " nmap <F8> :TagbarToggle<CR>
+
+" Save Shortcut F2
+nmap <F2> :update<CR>
+vmap <F2> <Esc><F2>gv
+imap <F2> <c-o><F2>
