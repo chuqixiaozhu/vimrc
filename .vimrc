@@ -121,6 +121,9 @@ let g:AutoPairsShortcutJump = '<C-k>'
 " Autotag
 " https://github.com/craigemery/vim-autotag
 
+" Ctrlp
+" https://github.com/ctrlpvim/ctrlp.vim
+
 " Save Shortcut F2
 nmap <F2> :update<CR>
 vmap <F2> <Esc><F2>gv
