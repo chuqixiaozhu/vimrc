@@ -118,6 +118,9 @@ let g:AutoPairsShortcutJump = '<C-k>'
 " https://github.com/majutsushi/tagbar
 " nmap <F8> :TagbarToggle<CR>
 
+" Autotag
+" https://github.com/craigemery/vim-autotag
+
 " Save Shortcut F2
 nmap <F2> :update<CR>
 vmap <F2> <Esc><F2>gv
