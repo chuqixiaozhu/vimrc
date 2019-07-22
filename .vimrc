@@ -106,6 +106,9 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 "inoremap <c-m> <Esc>:update<CR>
 set backspace=2 " make backspace work like most other programs
 set tags+=tags;/ " for ctags file
+" For Tab Completion
+set wildmenu
+set wildmode=list:longest,full
 
 " For Auto-Pairs
 " https://github.com/jiangmiao/auto-pairs
