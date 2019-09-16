@@ -131,6 +131,9 @@ let g:AutoPairsShortcutJump = '<C-k>'
 " Nerdcommenter
 " https://github.com/scrooloose/nerdcommenter
 
+" Lightline
+" https://github.com/itchyny/lightline.vim
+
 " Save Shortcut F2
 nmap <F2> :update<CR>
 vmap <F2> <Esc><F2>gv
